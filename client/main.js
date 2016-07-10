@@ -24,13 +24,15 @@ Template.hello.events({
 
 import {Vue} from 'meteor/akryum:vue';
 import Widget from '/imports/ui/Widget.vue';
+import NavBar from '/imports/ui/NavBar.vue';
 
 Template.vue_demo.rendered = function() {
   var vm = new Vue({
     el: '#vue-demo',
-    template: '<div><widget></widget></div>',
+    template: '<div><widget></widget><nav-bar></nav-bar></div>',
     components: {
-      Widget
+      Widget,
+      NavBar
     }
   });
 }

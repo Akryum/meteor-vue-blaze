@@ -10,6 +10,7 @@
 
 <script>
 import {Session} from 'meteor/session';
+import {$} from 'meteor/jquery';
 
 export default {
   data() {
@@ -24,6 +25,9 @@ export default {
         return Session.get("counter");
       }
     }
+  },
+  ready() {
+    console.log($('.widget'));
   }
 }
 </script>
