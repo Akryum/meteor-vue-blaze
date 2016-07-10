@@ -20,5 +20,10 @@ session
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
+
+accounts-ui
+accounts-password
+
 akryum:vue
 akryum:vue-component
+akryum:vue-blaze-template
